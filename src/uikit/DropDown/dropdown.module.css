@@ -1,0 +1,31 @@
+.root {
+	position: relative;
+	display: inline-block;
+}
+
+.content {
+	position: absolute;
+	background-color: var(--bg);
+	color: var(--foreground);
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+	padding: 8px 0;
+	max-height: 320px;
+	overflow: auto;
+	transform: translateY(0px);
+	transition: all 140ms ease-in-out;
+	opacity: 1;
+	z-index: 2;
+}
+
+@starting-style {
+	.content {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+}
+
+.backdrop {
+	position: fixed;
+	inset: 0;
+	z-index: 1;
+}

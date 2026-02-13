@@ -1,0 +1,27 @@
+:root {
+	--bs-light: #3a445b;
+	--bs-light-rgb: 58, 68, 91;
+	--bs-dark: #3a445b;
+	--bs-dark-rgb: 58, 68, 91;
+	--bs-header-bg: #7a6fbe;
+	--bs-header-dark-bg: #2a3142;
+	--bs-header-item-color: #ffffffb3;
+	--bs-topbar-search-bg: #ffffff1a;
+	--bs-navbar-header-bg: #2e3648;
+	--bs-dropdown-topbar: #ffffff1a;
+	--bs-topnav-bg: #323a4e;
+	--bs-footer-bg: #323a4e;
+	--bs-footer-color: #dee2e6;
+	--bs-boxed-body-bg: #2d3447;
+	--bs-sidebar-bg: #fff;
+
+	--bs-sidebar-menu-item-color: #79829c;
+	--bs-sidebar-menu-sub-item-color: #79829c;
+	--bs-sidebar-menu-item-icon-color: #79829c;
+	--bs-sidebar-menu-item-hover-color: #7a6fbe;
+	--bs-sidebar-menu-item-active-color: #7a6fbe;
+	--bs-sidebar-menu-item-active-bg: #f5f5f5;
+
+	--bg: oklab(26.138% -0.00077 -0.02558);
+	--foreground: #adb5bd;
+}

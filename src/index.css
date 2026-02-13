@@ -1,0 +1,62 @@
+html,
+#root,
+body {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	font-family: Poppins, sans-serif;
+	color: var(--foreground);
+	background-color: var(--bg);
+	font-size: 13px;
+}
+
+body,
+#root {
+	width: 100%;
+	margin: 0;
+}
+
+svg {
+	pointer-events: none;
+}
+
+img {
+	user-select: none;
+	-webkit-user-drag: none;
+	-moz-user-drag: none;
+	--user-drag: none;
+}
+
+.scrollbar {
+	&::-webkit-scrollbar {
+		width: 4px;
+		height: 4px;
+		border-radius: 2px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: rgba(241, 241, 241, 0.08);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: rgba(175, 175, 175, 0.08);
+		border-radius: 2px;
+	}
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+	display: none;
+	-webkit-appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}

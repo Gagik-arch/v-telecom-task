@@ -1,0 +1,16 @@
+.root {
+	cursor: pointer;
+	user-select: none;
+	color: var(--foreground);
+	font-size: 13px;
+}
+
+.default {
+	background-color: transparent;
+	border: none;
+}
+
+.primary {
+	background-color: #7a6fbe;
+	border: none;
+}

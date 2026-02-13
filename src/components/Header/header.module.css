@@ -1,0 +1,87 @@
+.top {
+	display: flex;
+	justify-content: space-between;
+	background: var(--bs-header-bg);
+	height: 70px;
+	padding: 0 clamp(1.25rem, -0.3163rem + 7.8313vw, 9.375rem);
+}
+
+.logo_container {
+	display: flex;
+	align-items: center;
+}
+
+.actions {
+	display: flex;
+	gap: 24px;
+}
+
+.input {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.lang {
+	padding: 4px 16px;
+	display: flex;
+	width: 100%;
+	font-size: 13px;
+	gap: 0 10px;
+	height: 28px;
+	align-items: center;
+
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+
+	& > img {
+		width: 18px;
+		height: 12px;
+	}
+}
+
+.dropdown_label {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	gap: 0 4px;
+}
+
+.flag {
+	width: 24px;
+	height: 16px;
+}
+
+.avatar {
+	border-radius: 50%;
+}
+
+.settings_icon {
+	animation-name: spin;
+	animation-duration: 2000ms;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	transform-origin: 50% 50%;
+}
+
+@keyframes spin {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+.notification_container {
+	width: 320px;
+	height: 320px;
+}
+
+.notification_container_title {
+	font-size: 16px;
+	padding: 16px;
+}
