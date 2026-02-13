@@ -11,7 +11,7 @@
 	top: 0;
 	bottom: 0;
 	min-width: 280px;
-	transition: all 180ms ease-in;
+	transition: all 160ms linear;
 	opacity: 1;
 	z-index: 2;
 	transform: translateX(0px);

@@ -1,11 +1,9 @@
-import { useRef } from 'react';
 import avatar from '$assets/images/avatar.jpg';
 import logo from '$assets/images/logo.png';
 import Maximizer from '$components/Maximizer';
+import SettingsDrawer from '$drawers/SettingsDrawer';
 import { FLAG_IMAGE_URL } from '$resources/constants';
 import Button from '$uikit/Button';
-import Drawer from '$uikit/Drawer';
-import type { DrawerRefType } from '$uikit/Drawer/types';
 import DropDown from '$uikit/DropDown';
 import Icon from '$uikit/Icon';
 import Image from '$uikit/Image';
@@ -13,8 +11,6 @@ import Input from '$uikit/Input';
 import styles from './header.module.css';
 
 const Header = () => {
-	const drawerRef = useRef<DrawerRefType>(null);
-
 	return (
 		<div className={styles.root}>
 			<div className={styles.top}>
@@ -112,28 +108,10 @@ const Header = () => {
 						/>
 					</Button>
 
-					<Button
-						variant='primary'
-						onClick={() => {
-							drawerRef.current?.open();
-						}}
-					>
-						<Icon name='Settings' className={styles.settings_icon} />
-					</Button>
+					<SettingsDrawer />
 				</div>
 			</div>
 			<div className={styles.navbar}>navbar</div>
-
-			<Drawer ref={drawerRef}>
-				<div>asdasdasd</div>
-				<div>asdasdasd</div>
-				<div>asdasdasd</div>
-				<div>asdasdasd</div>
-				<div>asdasdasd</div>
-				<div>asdasdasd</div>
-				<div>asdasdasd</div>
-				<div>asdasdasd</div>
-			</Drawer>
 		</div>
 	);
 };

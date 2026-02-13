@@ -1,0 +1,8 @@
+.settings_icon {
+	animation-name: spin;
+	animation-duration: 2000ms;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	transform-origin: 50% 50%;
+}
