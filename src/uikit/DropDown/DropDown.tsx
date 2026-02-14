@@ -4,7 +4,12 @@ import styles from './dropdown.module.css';
 import type { DropDownProps } from './types';
 
 const DropDown = memo(
-	({ children, label, labelClassName = '' }: DropDownProps) => {
+	({
+		children,
+		label,
+		labelClassName = '',
+		containerClassName,
+	}: DropDownProps) => {
 		const [isHide, setIsHide] = useState(true);
 		const ref = useRef<HTMLDivElement>(null);
 
@@ -23,7 +28,7 @@ const DropDown = memo(
 		}, [isHide]);
 
 		return (
-			<div className={styles.root}>
+			<div className={[styles.root, containerClassName].join(' ')}>
 				<Button
 					className={[styles.button, labelClassName].join(' ')}
 					onClick={() => {

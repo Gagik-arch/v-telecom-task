@@ -4,6 +4,8 @@
 	background: var(--bs-header-bg);
 	height: 70px;
 	padding: 0 clamp(1.25rem, -0.3163rem + 7.8313vw, 9.375rem);
+	z-index: 4;
+	position: relative;
 }
 
 .logo_container {
@@ -11,12 +13,16 @@
 	align-items: center;
 }
 
-.actions {
+.start_content {
 	display: flex;
-	gap: 24px;
+	gap: clamp(0.5rem, -0.1499rem + 3.2496vw, 1.875rem);
+}
+.end_content {
+	display: flex;
+	gap: clamp(0.5rem, 0.3rem + 1vw, 1.5rem);
 }
 
-.input {
+.search_container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -58,15 +64,6 @@
 	border-radius: 50%;
 }
 
-@keyframes spin {
-	from {
-		transform: rotateZ(0deg);
-	}
-	to {
-		transform: rotateZ(360deg);
-	}
-}
-
 .notification_container {
 	width: 320px;
 	height: 320px;
@@ -75,4 +72,121 @@
 .notification_container_title {
 	font-size: 16px;
 	padding: 16px;
+}
+
+.mobile_search {
+	padding: 16px;
+}
+
+.search {
+	padding: 6px 14px 6px 20px;
+	background-color: rgba(255, 255, 255, 0.102);
+	border-radius: 20px;
+}
+
+.title {
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.navbar {
+	padding: 0 clamp(1.25rem, -0.3163rem + 7.8313vw, 9.375rem);
+	background-color: var(--bs-header-dark-bg);
+	position: relative;
+}
+
+.navbar_top {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	align-items: center;
+	padding: 20px 0 0 0;
+
+	& > div:last-child {
+		display: flex;
+		gap: 40px;
+	}
+}
+
+.menu {
+	background-color: var(--bs-topnav-bg);
+	display: flex;
+	position: relative;
+	transition: transform 200ms ease;
+	z-index: 1;
+}
+
+.button {
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	font-size: 14px;
+	color: #79829c;
+	padding: 1.2rem 1.5rem;
+	transition: all 200ms linear;
+
+	&:hover {
+		color: #7a6fbe;
+	}
+}
+
+@media (width < 757px) {
+	.navbar_top {
+		& > div:last-child {
+			display: none;
+		}
+	}
+}
+
+.menu.is_open {
+	transform: translateY(0);
+}
+
+@media (width <= 997px) {
+	.language_dropdown,
+	.search_container {
+		display: none;
+	}
+	.menu_button {
+		display: block;
+	}
+	.menu {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		flex-direction: column;
+		overflow: hidden;
+		transform: translateY(-100%);
+	}
+
+	.button {
+		flex-direction: row;
+		justify-content: start;
+	}
+	.navbar_top {
+		padding: 20px 0;
+	}
+}
+
+@media (width > 997px) {
+	.mobile_search_container {
+		display: none;
+	}
+	.menu_button {
+		display: none;
+	}
+	.menu {
+		margin-top: -20px;
+		top: 40px;
+	}
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Button from '$uikit/Button';
 import Icon from '$uikit/Icon';
+import styles from './maximizer.module.css';
 
 const Maximizer = () => {
 	const [isMaximized, setIsMaximized] = useState(false);
@@ -19,8 +20,8 @@ const Maximizer = () => {
 	};
 
 	return (
-		<Button variant='primary' onClick={onMaximize}>
-			<Icon name={isMaximized ? 'Minimize' : 'Maximize'} />
+		<Button variant='primary' onClick={onMaximize} className={styles.root}>
+			<Icon name={isMaximized ? 'Minimize' : 'Maximize'} size={18} />
 		</Button>
 	);
 };

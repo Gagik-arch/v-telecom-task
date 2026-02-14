@@ -1,4 +1,5 @@
-import Header from './components/Header';
+import Body from '$components/Body';
+import Header from '$components/Header';
 import useTheme from './themes/useTheme';
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<div>body</div>
+			<Body />
 		</>
 	);
 }

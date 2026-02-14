@@ -1,0 +1,13 @@
+.root {
+	padding: 0 clamp(1.25rem, -0.3163rem + 7.8313vw, 9.375rem);
+	padding-top: 60px;
+}
+
+@media (width <= 997px) {
+	.root {
+		padding: 20px clamp(1.25rem, -0.3163rem + 7.8313vw, 9.375rem);
+	}
+}
+
+@media (width > 997px) {
+}

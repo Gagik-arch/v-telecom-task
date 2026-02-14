@@ -2,9 +2,6 @@
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	padding: 6px 14px 6px 20px;
-	background-color: rgba(255, 255, 255, 0.102);
-	border-radius: 20px;
 
 	& > input {
 		background-color: transparent;
@@ -16,4 +13,10 @@
 			color: rgba(255, 255, 255, 0.4);
 		}
 	}
+}
+
+.bordered {
+	border: 1px solid rgba(222, 226, 230, 0.4);
+	padding: 6px 12px;
+	border-radius: 6px;
 }

@@ -4,4 +4,5 @@ export type DropDownProps = {
 	children: ({ onClose }: { onClose: () => void }) => ReactNode;
 	label: ReactNode;
 	labelClassName?: string;
+	containerClassName?: string;
 };

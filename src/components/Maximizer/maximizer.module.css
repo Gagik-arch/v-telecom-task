@@ -1,0 +1,5 @@
+@media (width <= 997px) {
+	.root {
+		display: none;
+	}
+}
