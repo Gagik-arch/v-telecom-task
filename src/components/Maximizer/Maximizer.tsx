@@ -20,7 +20,7 @@ const Maximizer = () => {
 	};
 
 	return (
-		<Button variant='primary' onClick={onMaximize} className={styles.root}>
+		<Button onClick={onMaximize} className={styles.root}>
 			<Icon name={isMaximized ? 'Minimize' : 'Maximize'} size={18} />
 		</Button>
 	);

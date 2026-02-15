@@ -12,5 +12,19 @@
 
 .primary {
 	background-color: #7a6fbe;
+	color: #fff;
+}
+
+.secondary {
+	background-color: #dee2e6;
+	color: #adb5bd;
+}
+
+.primary,
+.secondary {
 	border: none;
+	padding: 7px 10px;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 500;
 }

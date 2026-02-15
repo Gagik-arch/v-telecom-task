@@ -1,9 +1,11 @@
 import { useRef } from 'react';
 import avatar from '$assets/images/avatar.jpg';
-import logo from '$assets/images/logo.png';
+import darkLogo from '$assets/images/logo-dark.png';
+import lightLogo from '$assets/images/logo-light.png';
 import mobileLogo from '$assets/images/mobile-logo.png';
 import Maximizer from '$components/Maximizer';
 import SettingsDrawer from '$drawers/SettingsDrawer';
+import useTheme from '$providers/ThemProvider/hook';
 import { FLAG_IMAGE_URL } from '$resources/constants';
 import Button from '$uikit/Button';
 import DropDown from '$uikit/DropDown';
@@ -15,15 +17,14 @@ import Navbar from './Navbar';
 
 const Header = () => {
 	const navbarRef = useRef<HTMLDivElement>(null);
+	const [theme] = useTheme();
 
 	const onClickMenu = () => {
-		console.log(navbarRef.current);
-
 		if (!navbarRef.current) return;
 
 		navbarRef.current.classList.toggle(styles.is_open);
 	};
-
+	console.log(theme);
 	return (
 		<div className={styles.root}>
 			<div className={styles.top}>
@@ -31,8 +32,11 @@ const Header = () => {
 					<a href='/' className={styles.logo_container}>
 						<picture>
 							<source media='(max-width: 998px)' srcSet={mobileLogo} />
-
-							<Image src={logo} height={19} />
+							{theme === 'dark' ? (
+								<Image src={darkLogo} height={19} />
+							) : (
+								<Image src={lightLogo} height={19} />
+							)}
 						</picture>
 					</a>
 
@@ -152,7 +156,7 @@ const Header = () => {
 						}}
 					</DropDown>
 
-					<Button variant='primary'>
+					<Button>
 						<Image
 							src={avatar}
 							alt={'avatar'}

@@ -32,10 +32,12 @@
 			"$adapters/*": ["./src/adapters/*"],
 			"$components/*": ["./src/components/*"],
 			"$resources/*": ["./src/resources/*"],
-			"$drawers/*": ["./src/drawers/*"]
+			"$drawers/*": ["./src/drawers/*"],
+			"$themes/*": ["./src/themes/*"],
+			"$providers/*": ["./src/providers/*"]
 		}
 	},
-	"include": ["src"],
+	"include": ["src", "chartjs-annotation.d.ts"],
 	"references": [
 		{
 			"path": "./tsconfig.node.json"

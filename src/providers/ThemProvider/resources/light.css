@@ -30,6 +30,8 @@
 	--bs-sidebar-collapsed-width: 70px;
 	--bs-sidebar-width-sm: 160px;
 
-	--bg: #f8f9fa;
+	--bg: #f5f5f5;
 	--foreground: #555b6d;
+	--drawer-title-color: #1f2431;
+	--block-bg: #fff;
 }

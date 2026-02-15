@@ -1,0 +1,35 @@
+.root {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	margin-bottom: 24px;
+	font-size: 16px;
+}
+
+.avatar {
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+}
+
+.avatar_container {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.edit_button {
+	background-color: #6c757d;
+	padding: 4px 8px;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 12px;
+}
+
+@media (width <= 997px) {
+	.wrapper {
+		min-height: 454px;
+	}
+}

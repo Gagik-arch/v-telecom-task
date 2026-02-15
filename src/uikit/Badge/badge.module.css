@@ -1,0 +1,18 @@
+.root {
+	font-size: 10px;
+	padding: 0 3px;
+	color: #fff;
+}
+
+.success {
+	background-color: rgba(88, 219, 131, 1);
+}
+.warning {
+	background-color: rgba(245, 178, 37, 1);
+}
+.info {
+	background-color: rgba(13, 202, 240, 1);
+}
+.danger {
+	background-color: rgba(236, 83, 108, 1);
+}
