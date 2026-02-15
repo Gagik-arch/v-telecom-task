@@ -5,7 +5,7 @@ import Block from '$uikit/Block';
 import Button from '$uikit/Button';
 import Image from '$uikit/Image';
 import Table from '$uikit/Table';
-import styles from './latestOrders.module.css';
+import styles from './lastOrders.module.css';
 import { data } from './static-data';
 
 const STATUS_COLORS: Record<(typeof data)[number]['status'], Variant> = {
