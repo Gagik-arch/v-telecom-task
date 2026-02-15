@@ -32,10 +32,7 @@ const ThemProvider = ({
 	}, []);
 
 	useEffect(() => {
-		const theme = document.getElementById('theme') as HTMLLinkElement;
-		if (!theme) return;
-
-		theme.href = `./src/providers/ThemProvider/resources/${value}.css`;
+		document.documentElement.classList.toggle('dark', value === 'dark');
 	}, [value]);
 
 	return (
