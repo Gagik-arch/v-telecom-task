@@ -24,7 +24,7 @@ const Header = () => {
 
 		navbarRef.current.classList.toggle(styles.is_open);
 	};
-	console.log(theme);
+
 	return (
 		<div className={styles.root}>
 			<div className={styles.top}>
