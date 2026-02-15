@@ -14,7 +14,7 @@ const SettingsDrawer = () => {
 	const onChangeTheme = (mode: 'light' | 'dark') => {
 		setTheme(mode);
 	};
-	console.log(123);
+
 	return (
 		<>
 			<Button
