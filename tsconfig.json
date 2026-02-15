@@ -37,7 +37,7 @@
 			"$providers/*": ["./src/providers/*"]
 		}
 	},
-	"include": ["src", "chartjs-annotation.d.ts"],
+	"include": ["./src", "chartjs-annotation.d.ts"],
 	"references": [
 		{
 			"path": "./tsconfig.node.json"
